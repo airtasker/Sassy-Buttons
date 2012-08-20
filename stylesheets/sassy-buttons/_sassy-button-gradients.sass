@@ -15,6 +15,9 @@
   @else
     background-color: $base-color
 
+  // Add IE filter
+  @include filter-gradient($first-color, darken($first-color, 20%))
+
   // Matte Gradient Style
   @if $style == "matte"
     $first-color: $base-color
